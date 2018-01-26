@@ -1,0 +1,33 @@
+#! /bin/bash
+
+echo "Enter one number :"
+read n1
+echo "Enter second number :"
+read n2
+echo "First number : $n1"
+echo "Second number : $n2"
+ch=0
+while [ $ch -ne 5 ]
+do
+echo "1.SUM"
+echo "2.PRODUCT"
+echo "3.DIFFERENCE"
+echo "4.QUOTIENT"
+echo "5.EXIT"
+echo "Enter Choice :"
+read ch
+case $ch in
+1)sum=`expr $n1 + $n2`
+echo "Sum : $sum" 
+;;
+2)pr=`expr $n1 \* $n2`
+ echo "Product : $pr"
+;;
+3)diff=`expr $n1 - $n2`
+ echo "Difference : $diff"
+;;
+4)iv=`expr $n1 / $n2`
+ echo "Quotient : $div"
+;;
+esac
+done
