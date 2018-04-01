@@ -1,0 +1,17 @@
+Shell Script to find the factorial of a number.
+
+For an integer n greater than or equal to 1, the factorial is the product of all integers less than or equal to n but greater 
+than or equal to 1. The factorial value of 0 is defined as equal to 1. The factorial values for negative integers are not 
+defined.
+
+
+#! /bin/bash
+echo "Enter a number :"
+read n
+fact=1
+for ((i=n;i>=1;i--))
+do
+fact=`expr $fact \* $i`
+done
+echo "Factorial : $fact"
+
