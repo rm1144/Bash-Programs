@@ -1,3 +1,5 @@
+Shell script to find the sum of elements in an Array.
+
 #! /bin/bash
 echo "Enter array :"
 read -a n
