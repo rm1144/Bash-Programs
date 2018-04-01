@@ -1,0 +1,10 @@
+#! /bin/bash
+echo "Enter a number :"
+read n
+fact=1
+for ((i=n;i>=1;i--))
+do
+fact=`expr $fact \* $i`
+done
+echo "Factorial : $fact"
+

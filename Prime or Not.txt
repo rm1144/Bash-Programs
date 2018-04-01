@@ -1,0 +1,19 @@
+#! /bin/bash
+echo "Enter a number :"
+read n
+flag=0
+for (( i=n-1;i>1;i--))
+do
+k=`expr $n % $1`
+if [$k -eq 0 ]
+then
+flag=1
+fi
+done
+if [ $flag -eq 1 ]
+then
+echo "Not a Prime Number"
+else
+echo "Prime Number"
+fi
+
